@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { CityPage, HomePage } from "./pages";
+import { CityPage, HomePage, PeakHoursPage } from "./pages";
 import { Layout } from "./components/";
 import { ThemeProvider } from "./providers/theme-provider";
 
@@ -10,6 +10,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/city/:cityName" element={<CityPage />} />
+          <Route path="/peak-hours" element={<PeakHoursPage />} />
         </Routes>
       </Layout>
     </ThemeProvider>
